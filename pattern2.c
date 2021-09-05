@@ -25,3 +25,26 @@
 //     }
 
 // }
+
+
+/*
+            *
+           ***
+          *****
+*/
+
+#include<stdio.h>
+
+int main(){
+    int lines=3;
+    for(int i=0 ; i<lines ; i++){
+        for(int j=0 ; j<2*lines-1 ; j++){
+            if(j>=lines-1-i && j<=lines-1+i)
+                printf("*");
+            else
+                printf(" ");    
+        }
+        printf("\n");
+    }
+    return 0;
+}
